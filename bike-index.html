@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA_Compatible" content="ie=edge" />
+    <title>Bike Helipng Hub</title>
+    <meta
+      name="description"
+      content=" the website for the bike repairing and services"
+    />
+
+    <style>
+      .floating-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999;
+      }
+      
+      .floating-button label {
+          display: block;
+          width: 60px;
+          height: 60px;
+          background-color:#000;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+      }
+      
+      .floating-button i {
+          display: block;
+          color: #555555;
+          font-size: 24px;
+          text-align: center;
+          line-height: 60px;
+      }
+      
+      .hidden-checkbox {
+          display: none;
+      }
+      
+      .hidden-checkbox:checked + label {
+          background-color:red; /* Change color when checked */
+      }
+  
+      #mic-btn
+      {
+          color: white;
+      }
+      
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- eric mayers css reset -->
+    <link rel="stylesheet" href="bikecss/css-reset.css" />
+
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="bikecss/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-section">
+        <!-- Lion Logo -->
+        <div class="logo">
+          <a href="bike-index.html"
+            ><img
+              class="logo-img"
+              src="bikeimage/logo-roar-bikes.png"
+              alt="lion logo"
+          /></a>
+        </div>
+        <!-- Nav bar -->
+        <nav>
+          <div class="navbutton">
+            <a href="bike-index.html" id="homev">Home</a>
+          </div>
+          <div class="navbutton">
+            <a href="#service-nav" id="servicev">Services</a>
+          </div>
+          <div class="navbutton">
+            <a href="#about-nav-btn" id="aboutv">About</a>
+          </div>
+          <div class="navbutton">
+            <a href="contact-us.html" id="contactv">Contact</a>
+          </div>
+          <div class="navbutton">
+            <a href="index.html" id="mainv">Main Home</a>
+          </div>
+        </nav>
+      </div>
+    
+    </header>
+  </div>
+    <div class="container">
+      <!-- 2 boxes of content and image -->
+      <div class="main_container">
+      <main>
+        <div class="herobox1">
+          <h1>Mobile bike repairs.</h1>
+          <p>
+            Many people have difficulty getting their bikes to a bike shop. We
+            call to your office or home anywhere in Gorakhpur.
+          </p>
+          <p>
+            Fast,convenient bike servicing with up-front pricing. All without
+            the hassle of taking your bike into a shop
+          </p>
+          <a href="bookonline.html" class="bookbtn">Book Home Service</a>
+        </div>
+        <div class="herobox2">
+          <img
+            class="hero2-img"
+            src="bikeimage/image-bike-repair-service.jpg"
+            alt="person servicing a bike"
+          />
+        </div>
+      </main>
+
+      <!-- flexbox cards -->
+      <div class="cards" id="myfrom">
+        <div class="card1 sec2-card" >
+          <a href="bookonline.html" id="bookonlinelink">
+            <i class="fas fa-motorcycle"></i>
+            <h2>Book Home Service</h2>
+            <p>
+             
+            </p>
+          </a>
+        </div>
+
+        <div class="card2 sec2-card">
+          <a href="repairing.html" id="repairinglink">
+            <i class="fas fa-cogs" ></i>
+            <h2>Basic Problems</h2>
+            <p>
+             
+            </p>
+          </a>
+        </div>
+
+        <div class="card3 sec2-card">
+          <a href="call.html" id="calllink">
+            <i class="fas fa-phone-alt"></i>
+            <h2>Call For Advice</h2>
+            <p>
+            
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-button">
+      <input type="checkbox" id="micCheckbox" class="hidden-checkbox">
+      <label for="micCheckbox">
+          <i id="mic-btn" class="fa-solid fa-microphone"></i>
+      </label>
+    </div>
+    <!-- about section -->
+    <div class="about_aection" id="about-nav-btn" style="margin-bottom: 4rem;">
+      <div class="about_image" style="margin-right: 2rem;">
+        <img src="bikeimage/about.jpg" alt="" class="image_about" style="width:400px; height: 400px; ">
+      </div>
+      <div class="about_text">
+        <h2 class="customer">About</h2>
+        <p>
+          Welcome to our online bike service hub, your trusted source for all things related to two-wheelers. 
+          At our core, we're dedicated to enhancing your biking experience. Our platform provides a wealth of resources, from maintenance tips and troubleshooting guides to a vibrant community of riders who share their passion. 
+          We're more than a website; we're your biking companion, ensuring you ride with confidence and joy. Discover our user-friendly interface and make us your go-to destination for all your bike-related queries. 
+          Your adventure continues here.
+        </p>
+      </div>
+    </div>
+
+    <!-- service -->
+
+    <div class="about_aection" id="service-nav" style="margin-bottom: 4rem;">
+      <div class="about_text">
+        <h2 class="customer">Service</h2>
+        <p>
+          Our comprehensive bike support services are designed to provide quick and efficient solutions for all your cycling needs. Whether you're facing unexpected repairs, in need of immediate maintenance, or seeking emergency assistance, our team is equipped to handle it all. 
+          Our mobile bike mechanics offer 24/7 emergency repair services and express tune-ups to ensure minimal disruption to your biking routine. 
+          Additionally, our bike recovery service guarantees swift assistance in the event of breakdowns or accidents. 
+          With our commitment to rapid response times and quality service, we aim to keep you and your bike on the road with peace of mind.
+        </p>
+      </div>
+    </div>
+
+
+      <!-- reviews -->
+      
+      <div class="customer_container">
+      <h2 class="customer">What Our Customers Think About Us</h2>
+      <div class="testimonials">
+        <div class="tbox">
+          <p>
+            "I would like to personally thank you for your outstanding product.
+            You guys rock! It's all good."
+          </p>
+          <p>- Tammara I.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "Bike Helipng Hub  is the most valuable business resource we have EVER
+            purchased. I will let my mum know about this, she could really make
+            use of Bike Helipng Hub ! Bike Helipng Hub has completely surpassed our
+            expectations."
+          </p>
+          <p>- Floris V.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "I'm good to go. this  is both attractive and highly
+            adaptable. I will refer everyone I know."
+          </p>
+          <p>- Carlin B.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "Bike Helipng Hub impressed me on multiple levels. I would gladly pay
+            over 600 dollars for Bike Helipng Hub. We can't understand how we've been
+            living without Bike Helipng Hub."
+          </p>
+          <p>- Eve V.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "I don't know what else to say. Absolutely wonderful! You've saved
+            our business! After using Bike Helipng Hub my business skyrocketed!"
+          </p>
+          <p>- Brier Q.</p>
+        </div>
+
+        <div class="tbox">
+          <p>"Bike Helipng Hub should be nominated for service of the year."</p>
+          <p>- Elfrieda U.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- footer -->
+   <br><br><br>
+   <section class="footer">
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Helping Hub</span></strong>. All Rights Reserved
+    </div>
+  </section>
+
+    <script src="bikejs/voice.js"></script>
+
+  </body>
+</html>

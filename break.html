@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Brake Problem</title>
+    <style>
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+        
+        .floating-button label {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color:#000;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        
+        .floating-button i {
+            display: block;
+            color: #555555;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+        }
+        
+        .hidden-checkbox {
+            display: none;
+        }
+        
+        .hidden-checkbox:checked + label {
+            background-color:red; /* Change color when checked */
+        }
+    
+        #mic-btn
+        {
+            color: white;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="bikecss/break.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bike Brake Problem</h1>
+        <p>If your bike is experiencing brake problems, it's crucial to address them promptly. Brake issues can compromise your safety on the road. Common brake problems include:</p>
+        <ul>
+            <li>Squeaking or squealing brakes</li>
+            <li>Soft or mushy brake pedal</li>
+            <li>Brake fluid leakage</li>
+            <li>Reduced stopping power</li>
+        </ul>
+        <p>If you are experiencing any of these brake problems, it's essential to have a professional mechanic inspect and repair your bike's braking system.</p>
+        <p>Here is a video that provides more information about common bike brake problems and how to address them:</p>
+        <iframe src="https://www.youtube.com/embed/VI_IDDEO" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="floating-button">
+        <input type="checkbox" id="micCheckbox" class="hidden-checkbox">
+        <label for="micCheckbox">
+            <i id="mic-btn" class="fa-solid fa-microphone"></i>
+        </label>
+    </div>
+    <script src="bikejs/mainhome.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Problems</title>
+    <link rel="stylesheet" href="bikecss/repairing.css">
+    
+    <style>
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+        
+        .floating-button label {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color:#000;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        
+        .floating-button i {
+            display: block;
+            color: #555555;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+        }
+        
+        .hidden-checkbox {
+            display: none;
+        }
+        
+        .hidden-checkbox:checked + label {
+            background-color:red; /* Change color when checked */
+        }
+    
+        #mic-btn
+        {
+            color: white;
+        }
+        
+    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <h2 class="customer">Some Problems of Motorcycle</h2>
+    <div class="container">
+        <a href="break.html" class="card">
+            <h2>Brake Problem</h2>
+            <p>If your motorcycle is having issues with the brakes, it's essential to get them inspected and repaired as soon as possible for your safety.</p>
+        </a>
+
+        <a href="starting.html" class="card">
+            <h2>Starting Problem</h2>
+            <p>If your motorcycle is having trouble starting, it could be due to various reasons, such as a weak battery, faulty ignition system, or fuel-related issues.</p>
+        </a>
+
+        <a href="#" class="card">
+            <h2>Other Problems</h2>
+            <p>Motorcycles can experience various other issues, including engine problems, electrical issues, and more. It's crucial to have a professional mechanic diagnose and fix these problems.</p>
+        </a>
+
+        <a href="#" class="card">
+            <h2>Other Problems</h2>
+            <p>Motorcycles can experience various other issues, including engine problems, electrical issues, and more. It's crucial to have a professional mechanic diagnose and fix these problems.</p>
+        </a>
+
+        <a href="#" class="card">
+            <h2>Other Problems</h2>
+            <p>Motorcycles can experience various other issues, including engine problems, electrical issues, and more. It's crucial to have a professional mechanic diagnose and fix these problems.</p>
+        </a>
+
+        <a href="#" class="card">
+            <h2>Other Problems</h2>
+            <p>Motorcycles can experience various other issues, including engine problems, electrical issues, and more. It's crucial to have a professional mechanic diagnose and fix these problems.</p>
+        </a>
+    </div>
+    <div class="floating-button">
+        <input type="checkbox" id="micCheckbox" class="hidden-checkbox">
+        <label for="micCheckbox">
+            <i id="mic-btn" class="fa-solid fa-microphone"></i>
+        </label>
+    </div>
+    <script src="bikejs/mainhome.js"></script>
+</body>
+</html>
