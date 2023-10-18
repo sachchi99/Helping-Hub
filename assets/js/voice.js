@@ -14,12 +14,12 @@ microphoneButton.addEventListener('click', () => {
               window.scrollBy(0, window.innerHeight);
             } else if (command.includes('scroll up')) {
               window.scrollBy(0, -window.innerHeight); // Scroll up by the height of the window
-            } else if (command.includes('gt to home')) {
+            } else if (command.includes('go to home')) {
               // Replace "targetElement" with the actual element you want to click on
               const targetElement = document.getElementById("homev");
               targetElement.click();
           }
-            else if (command.includes('gt to about')) {
+            else if (command.includes('go to about')) {
               // Replace "targetElement" with the actual element you want to click on
               const targetElement = document.getElementById("aboutv");
               targetElement.click();
