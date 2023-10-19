@@ -37,6 +37,21 @@ microphoneButton.addEventListener('click', () => {
                const targetElement = document.getElementById("mainv");
                targetElement.click();
              }
+            else if (command.includes('book home service')) {
+              // Replace "targetElement" with the actual element you want to click on
+              const targetElement = document.getElementById("bookhomeservicev");
+              targetElement.click();
+            }
+            else if (command.includes('go to basic problems')) {
+              // Replace "targetElement" with the actual element you want to click on
+              const targetElement = document.getElementById("basicproblemv");
+              targetElement.click();
+            }
+            else if (command.includes('call for advice')) {
+              // Replace "targetElement" with the actual element you want to click on
+              const targetElement = document.getElementById("callforadvicev");
+              targetElement.click();
+            }
         };
         recognition.onend = () => {
             microphoneButton.textContent = 'Start Listening';
