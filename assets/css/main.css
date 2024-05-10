@@ -64,6 +64,45 @@ h6 {
   }
 }
 
+.floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+    
+    .floating-button label {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color:#000;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    
+    .floating-button i {
+        display: block;
+        color: #555555;
+        font-size: 24px;
+        text-align: center;
+        line-height: 60px;
+    }
+    
+    .hidden-checkbox {
+        display: none;
+    }
+    
+    .hidden-checkbox:checked + label {
+        background-color:red; /* Change color when checked */
+    }
+
+    #mic-btn
+    {
+        color: white;
+    }
+    
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
